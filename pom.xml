@@ -21,8 +21,9 @@
         <syscontrol.version>1.0</syscontrol.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
-        <!--        <maven.war.plugin.version>2.5</maven.war.plugin.version>-->
-        <!--        <maven.compiler.plugin.version>3.2</maven.compiler.plugin.version>-->
+        <maven.compiler.version>1.8</maven.compiler.version>
+        <maven.compiler.plugin.version>3.2</maven.compiler.plugin.version>
+        <lombok.version>1.18.12</lombok.version>
         <!--        <spring.version>3.2.14.RELEASE</spring.version>-->
         <!--        <junit.version>4.10</junit.version>-->
         <!--        <servlet.api.version>2.4</servlet.api.version>-->
@@ -54,12 +55,18 @@
         </dependencies>
     </dependencyManagement>
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>${maven.compiler.version}</source>
+                        <target>${maven.compiler.version}</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 
 </project>
