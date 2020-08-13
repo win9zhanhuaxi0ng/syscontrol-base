@@ -51,6 +51,26 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.demofactory.syscontrol</groupId>
+                <artifactId>syscontrol-domain</artifactId>
+                <version>${syscontrol.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.demofactory.syscontrol</groupId>
+                <artifactId>syscontrol-dao</artifactId>
+                <version>${syscontrol.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.demofactory.syscontrol</groupId>
+                <artifactId>syscontrol-api</artifactId>
+                <version>${syscontrol.version}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>

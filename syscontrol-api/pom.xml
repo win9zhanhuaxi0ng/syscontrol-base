@@ -13,5 +13,10 @@
 
     <dependencies>
 
+
+        <dependency>
+            <groupId>com.demofactory.syscontrol</groupId>
+            <artifactId>syscontrol-domain</artifactId>
+        </dependency>
     </dependencies>
 </project>
