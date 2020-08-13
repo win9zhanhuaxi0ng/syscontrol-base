@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface DemoDao {
 
-    public int insert(Demo demo);
+    void insert(Demo demo);
 }

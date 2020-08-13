@@ -2,9 +2,8 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.demofactory.syscontrol.dao.DemoDao">
-    <insert id="insert">
-        insert into
-        sys_domian(id,create_time,modify_time,name,url,remark,status)
-        values (1,null ,null ,null ,null ,null ,null)
+    <insert id="insert" parameterType="demo">
+        insert into sys_domain(id, create_time, modify_time, name, url, remark, status)
+        values (1, null, null, null, null, null, null)
     </insert>
 </mapper>
