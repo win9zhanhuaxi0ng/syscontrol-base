@@ -1,6 +1,6 @@
 package com.demofactory.syscontrol.api;
 
-import com.demofactory.syscontrol.domain.demo.Demo;
+import com.demofactory.syscontrol.domain.Demo;
 
 public interface DemoService {
 

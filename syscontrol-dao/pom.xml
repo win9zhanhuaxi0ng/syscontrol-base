@@ -12,6 +12,14 @@
     <artifactId>syscontrol-dao</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.demofactory.syscontrol</groupId>
+            <artifactId>syscontrol-domain</artifactId>
+        </dependency>
 
     </dependencies>
 </project>

@@ -1,4 +1,4 @@
-package com.demofactory.syscontrol.domain.demo;
+package com.demofactory.syscontrol.domain;
 
 import lombok.Data;
 
