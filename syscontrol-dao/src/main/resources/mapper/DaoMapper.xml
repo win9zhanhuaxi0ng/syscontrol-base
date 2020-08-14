@@ -4,6 +4,6 @@
 <mapper namespace="com.demofactory.syscontrol.dao.DemoDao">
     <insert id="insert" parameterType="demo">
         insert into sys_domain(id, create_time, modify_time, name, url, remark, status)
-        values (1, null, null, null, null, null, null)
+        values (#{id}, #{createTime}, #{modifyTime}, #{name}, #{url}, #{remark}, #{status})
     </insert>
 </mapper>
