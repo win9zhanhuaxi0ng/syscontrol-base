@@ -1,6 +1,7 @@
 package com.demofactory.syscontrol.domain;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.time.LocalDateTime;
 
@@ -8,6 +9,7 @@ import java.time.LocalDateTime;
 /**
  * @author FHX
  */
+@EqualsAndHashCode(callSuper = true)
 @Data
 public class SysUser extends Base{
     private Long id;

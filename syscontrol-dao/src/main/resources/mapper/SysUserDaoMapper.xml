@@ -2,6 +2,17 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.demofactory.syscontrol.dao.SysUserDao">
+    <insert id="insertNewSysUser" parameterType="string">
+        insert into sys_user (account,password) values (#{account},#{password})
+    </insert>
+<!--    <insert id="insertNewSysUser" parameterType="com.demofactory.syscontrol.domain.SysUser">-->
+<!--        insert into sys_user-->
+<!--        (id,domain_id,org_id,create_time,modify_time,account,password,pwd_plaintext,pwd_hint,last_login_time,-->
+<!--        pwd_update_time,user_name,user_sex,user_email,user_phone,super_flag,status)-->
+<!--        values-->
+<!--        (#{id},#{domianId},#{orgId},#{createTime},#{modifyTime},#{account},#{password},#{pwdPlaintext},#{pwdHint},-->
+<!--        #{lastLoginTime},#{pwdUpdateTime},#{userName},#{userSex},#{userEmail},#{userPhone},#{superFlag},#{status})-->
+<!--    </insert>-->
     <select id="findByAccount" parameterType="string" resultType="com.demofactory.syscontrol.domain.SysUser">
         select * from sys_user where account = #{account}
     </select>
