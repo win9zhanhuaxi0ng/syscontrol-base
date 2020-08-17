@@ -1,10 +1,11 @@
 package com.demofactory.syscontrol.api;
 
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.demofactory.syscontrol.domain.SysUser;
 
 import java.time.LocalDateTime;
 
-public interface SysUserService {
+public interface SysUserService extends IService<SysUser> {
     /**
      * 登录页面实现
      * @param account
