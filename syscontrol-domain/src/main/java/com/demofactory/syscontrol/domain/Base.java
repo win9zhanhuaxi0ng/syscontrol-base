@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 @Data
 public class Base implements Serializable {
     private Long id;
-    private LocalDateTime creteTime;
+    private LocalDateTime createTime;
     private LocalDateTime modifyTime;
 
 }
