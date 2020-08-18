@@ -37,4 +37,12 @@ public interface SysUserService extends IService<SysUser> {
      * @return
      */
     LocalDateTime findLastLoginTimeByAccount(String account);
+
+    /**
+     * 判断账号与提示语是否正确
+     * @author Hanamaru
+     * @param sysUser
+     * @return
+     */
+    public String SelectAccountOrHint(SysUser sysUser);
 }

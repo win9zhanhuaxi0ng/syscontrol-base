@@ -1,7 +1,9 @@
 package com.demofactory.syscontrol.domain;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import org.apache.ibatis.annotations.Param;
 
 import java.time.LocalDateTime;
 
