@@ -7,36 +7,32 @@ import java.time.LocalDateTime;
 
 public interface SysUserService extends IService<SysUser> {
     /**
-     * 登录页面实现
-     * @param account
-     * @param password
-     * @return
+     *登录功能
+     * @param sysUser
+     * @return SysUser
      */
-    SysUser loginByAccountAndPassword(String account,String password);
+    SysUser login(SysUser sysUser);
 
     /**
-     * 注册页面实现
-     * @param account
-     * @param password
-     * @param secondaryPwd
-     * @param pwdHint
+     *
+     * @param sysUser
      * @return
      */
-    int registerSysUser(String account,String password,String secondaryPwd,String pwdHint);
+    int register(SysUser sysUser,String secondaryPwd);
 
     /**
      * 更新上次登录时间
      * @param lastLoginTime
      * @param account
      */
-    void updateLastLoginTime(LocalDateTime lastLoginTime, String account);
+    void updateLastLoginTime(SysUser sysUser);
 
     /**
      * 获取上次登录时间
      * @param account
      * @return
      */
-    LocalDateTime findLastLoginTimeByAccount(String account);
+    LocalDateTime findLastLoginTime(String account);
 
     /**
      * 判断账号与提示语是否正确

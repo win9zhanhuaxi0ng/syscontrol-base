@@ -10,9 +10,9 @@ import java.time.LocalDateTime;
 @Repository
 public interface SysUserDao extends BaseMapper<SysUser> {
 
-    SysUser findByAccount(String account);
-    void insertNewSysUser(@Param("account") String account,@Param("password") String password,@Param("pwd_hint") String pwdHint);
-    void updateLastLoginTime(@Param("last_login_time") LocalDateTime lastLoginTime,@Param("account") String account);
-    LocalDateTime findLastLoginTimeByAccount(@Param("account") String account);
+//    SysUser findByAccount(String account);
+//    void insertNewSysUser(@Param("account") String account,@Param("password") String password,@Param("pwd_hint") String pwdHint);
+//    void updateLastLoginTime(@Param("last_login_time") LocalDateTime lastLoginTime,@Param("account") String account);
+//    LocalDateTime findLastLoginTimeByAccount(@Param("account") String account);
 
 }
