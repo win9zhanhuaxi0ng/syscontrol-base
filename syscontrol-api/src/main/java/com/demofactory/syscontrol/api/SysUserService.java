@@ -40,5 +40,5 @@ public interface SysUserService extends IService<SysUser> {
      * @param sysUser
      * @return
      */
-    public String SelectAccountAndHint(SysUser sysUser);
+    String SelectAccountAndHint(SysUser sysUser);
 }
