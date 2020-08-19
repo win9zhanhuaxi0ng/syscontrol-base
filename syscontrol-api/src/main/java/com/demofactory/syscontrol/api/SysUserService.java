@@ -22,17 +22,9 @@ public interface SysUserService extends IService<SysUser> {
 
     /**
      * 更新上次登录时间
-     * @param lastLoginTime
-     * @param account
+     * @param sysUser
      */
     void updateLastLoginTime(SysUser sysUser);
-
-    /**
-     * 获取上次登录时间
-     * @param account
-     * @return
-     */
-    LocalDateTime findLastLoginTime(String account);
 
     /**
      * 判断账号与提示语是否正确
@@ -40,5 +32,5 @@ public interface SysUserService extends IService<SysUser> {
      * @param sysUser
      * @return
      */
-    String SelectAccountAndHint(SysUser sysUser);
+    String selectAccountAndHint(SysUser sysUser);
 }
