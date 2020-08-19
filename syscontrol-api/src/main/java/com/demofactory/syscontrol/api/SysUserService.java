@@ -33,4 +33,12 @@ public interface SysUserService extends IService<SysUser> {
      * @return
      */
     String selectAccountAndHint(SysUser sysUser);
+
+    /**
+     * 修改用户密码
+     * @param sysUser 用户账号、密码
+     * @param secondaryPwd 二次密码校验
+     * @return 提示语
+     */
+    String updatePassword(SysUser sysUser,String secondaryPwd);
 }
