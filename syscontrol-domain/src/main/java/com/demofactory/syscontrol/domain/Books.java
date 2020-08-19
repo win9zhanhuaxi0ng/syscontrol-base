@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class Books extends Base{
-    private Integer userId;
+    private Integer domainId;
     private String bookName;
     private String bookUrl;
 }
