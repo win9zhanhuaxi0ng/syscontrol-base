@@ -15,6 +15,8 @@ public class RegexUtil {
     public static final String REGEX_PASSWORD = "^(?:(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])).{6,}$";
 
 
+
+
     public static boolean checkRegex(String regexParam, String checkParam) {
         Pattern pattern = Pattern.compile(regexParam);
         Matcher matcher = pattern.matcher(checkParam);
