@@ -21,9 +21,9 @@ public interface BookService extends IService<Books> {
     List<Books> selectBook(Books books);
 
     /**
-     * 书本删除 book_name domain_id
-     * @param books
+     * 书本删除 id
+     * @param id
      * @return
      */
-    String deleteBook(Books books);
+    String deleteBook(Long id);
 }
