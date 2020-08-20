@@ -14,7 +14,6 @@ import java.time.LocalDateTime;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class SysUser extends Base{
-    private Long id;
     private Integer domainId;
     private Integer orgId;
     private String account;

@@ -6,9 +6,11 @@ import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Repository
 public interface SysUserDao extends BaseMapper<SysUser> {
+
 
 //    SysUser findByAccount(String account);
 //    void insertNewSysUser(@Param("account") String account,@Param("password") String password,@Param("pwd_hint") String pwdHint);

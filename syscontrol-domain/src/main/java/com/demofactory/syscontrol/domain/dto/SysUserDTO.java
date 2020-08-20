@@ -14,5 +14,4 @@ import java.time.LocalDateTime;
 @Data
 public class SysUserDTO extends SysUser {
     private String secondaryPwd;
-
 }
