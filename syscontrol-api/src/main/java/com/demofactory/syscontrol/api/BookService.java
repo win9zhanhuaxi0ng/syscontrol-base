@@ -28,5 +28,5 @@ public interface BookService extends IService<Books> {
      * @param id
      * @return
      */
-    String deleteBook(Books books);
+    String deleteBook(Long id);
 }
