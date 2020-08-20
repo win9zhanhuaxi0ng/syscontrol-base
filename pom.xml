@@ -12,6 +12,7 @@
         <module>syscontrol-domain</module>
         <module>syscontrol-dao</module>
         <module>syscontrol-api</module>
+        <module>syscontrol-common</module>
     </modules>
     <name>syscontrol-base</name>
 

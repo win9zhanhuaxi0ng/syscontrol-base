@@ -11,7 +11,7 @@ public interface SysUserService extends IService<SysUser> {
      * @param sysUser
      * @return SysUser
      */
-    SysUser login(SysUser sysUser);
+    int login(SysUser sysUser);
 
     /**
      *
