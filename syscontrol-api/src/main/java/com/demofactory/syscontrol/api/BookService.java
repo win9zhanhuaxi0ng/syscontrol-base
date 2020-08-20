@@ -4,7 +4,11 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.demofactory.syscontrol.domain.Books;
 
 import java.util.List;
-
+/**
+ * @author:Hanamaru
+ * @description: TODO
+ * @date: 2020/8/20 13:46
+ */
 public interface BookService extends IService<Books> {
     /**
      * 书本插入 book_name domain_id

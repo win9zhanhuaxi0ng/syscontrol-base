@@ -15,4 +15,5 @@ public class SysOrg extends Base {
     private String orgName;
     private String orgCode;
     private String orgRemark;
+    private Integer status;
 }
