@@ -25,7 +25,7 @@ public interface BookService extends IService<Books> {
     /**
      * 书本删除 book_name domain_id
      *
-     * @param books
+     * @param id
      * @return
      */
     String deleteBook(Books books);
