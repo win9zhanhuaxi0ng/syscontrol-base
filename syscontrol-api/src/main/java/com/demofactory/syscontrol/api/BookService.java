@@ -8,6 +8,7 @@ import java.util.List;
 public interface BookService extends IService<Books> {
     /**
      * 书本插入 book_name domain_id
+     *
      * @param books
      * @return
      */
@@ -15,6 +16,7 @@ public interface BookService extends IService<Books> {
 
     /**
      * 书本查找 book_name domain_id
+     *
      * @param books
      * @return
      */
@@ -22,6 +24,7 @@ public interface BookService extends IService<Books> {
 
     /**
      * 书本删除 book_name domain_id
+     *
      * @param books
      * @return
      */

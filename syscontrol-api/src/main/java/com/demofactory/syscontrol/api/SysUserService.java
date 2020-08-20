@@ -22,6 +22,7 @@ public interface SysUserService extends IService<SysUser> {
 
     /**
      * 更新上次登录时间
+     *
      * @param sysUser
      */
     void updateLastLoginTime(SysUser sysUser);
