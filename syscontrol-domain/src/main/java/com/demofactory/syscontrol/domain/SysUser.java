@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
-public class SysUser extends Base{
+public class SysUser extends Base {
     private Integer domainId;
     private Integer orgId;
     private String account;

@@ -9,7 +9,7 @@ import lombok.EqualsAndHashCode;
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
-public class SysDomain extends Base{
+public class SysDomain extends Base {
     private String name;
     private String url;
     private String remark;

@@ -2,6 +2,7 @@ package com.demofactory.syscontrol.api;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.demofactory.syscontrol.domain.SysUser;
+
 /**
  * @author:Hanamaru
  * @description: TODO
@@ -10,6 +11,7 @@ import com.demofactory.syscontrol.domain.SysUser;
 public interface UserStatusService extends IService<SysUser> {
     /**
      * 通过 account 修改Status
+     *
      * @param sysUser
      * @return
      */

@@ -11,6 +11,7 @@ import com.demofactory.syscontrol.domain.SysDomain;
 public interface DomainStatusService extends IService<SysDomain> {
     /**
      * 通过id status 更改domain org user 的status
+     *
      * @param sysDomain
      * @return
      */

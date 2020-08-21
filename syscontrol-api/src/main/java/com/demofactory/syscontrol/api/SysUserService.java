@@ -22,6 +22,7 @@ public interface SysUserService extends IService<SysUser> {
 
     /**
      * 注册功能
+     *
      * @param sysUserDTO 用户DTO信息
      * @return
      */
@@ -46,6 +47,7 @@ public interface SysUserService extends IService<SysUser> {
 
     /**
      * 查找用户组织和域
+     *
      * @param sysUser
      * @return
      */
@@ -53,6 +55,7 @@ public interface SysUserService extends IService<SysUser> {
 
     /**
      * 添加用户组织和域
+     *
      * @param sysUser 用户信息+域id和组织id
      * @return
      */
@@ -60,6 +63,7 @@ public interface SysUserService extends IService<SysUser> {
 
     /**
      * 展示用户所属域下的书列表
+     *
      * @param sysUser
      * @return
      */
@@ -67,6 +71,7 @@ public interface SysUserService extends IService<SysUser> {
 
     /**
      * 用户添加书
+     *
      * @param userBook 书+用户ID
      * @return
      */
@@ -74,12 +79,14 @@ public interface SysUserService extends IService<SysUser> {
 
     /**
      * 展示用户下的书列表
+     *
      * @return
      */
     List<Books> selectBooksByUserId(SysUser sysUser);
 
     /**
      * 用户删除书
+     *
      * @param userBook 书ID和用户ID
      * @return
      */

@@ -12,7 +12,8 @@ import java.util.List;
  */
 public interface AssignUserService extends IService<SysUser> {
     /**
-     *通过 domainId orgId 查询 sysUser
+     * 通过 domainId orgId 查询 sysUser
+     *
      * @param sysUser
      * @return List
      */
@@ -20,6 +21,7 @@ public interface AssignUserService extends IService<SysUser> {
 
     /**
      * 通过 id account 修改sysUser->domainId&&orgId
+     *
      * @param sysUser
      * @return
      */
