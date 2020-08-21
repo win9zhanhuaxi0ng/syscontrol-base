@@ -1,6 +1,8 @@
 package com.demofactory.syscontrol.common;
 
-public class Result {
+import java.io.Serializable;
+
+public class Result implements Serializable {
     private static final int SUCCESS = 200;
     private static final int FAILED = 500;
     private static final long serialVersionUID = 2267751680865696851L;

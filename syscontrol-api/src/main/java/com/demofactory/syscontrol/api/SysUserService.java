@@ -1,13 +1,14 @@
 package com.demofactory.syscontrol.api;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.demofactory.syscontrol.common.Result;
 import com.demofactory.syscontrol.domain.Books;
 import com.demofactory.syscontrol.domain.SysUser;
 import com.demofactory.syscontrol.domain.UserBook;
 import com.demofactory.syscontrol.domain.dto.SysUserDTO;
 import org.springframework.boot.autoconfigure.security.SecurityProperties;
 
-import java.awt.print.Book;
+
 import java.util.List;
 
 
@@ -18,7 +19,7 @@ public interface SysUserService extends IService<SysUser> {
      * @param sysUser
      * @return SysUser
      */
-    String login(SysUser sysUser);
+    Result login(SysUser sysUser);
 
     /**
      * 注册功能
@@ -35,7 +36,7 @@ public interface SysUserService extends IService<SysUser> {
      * @return
      * @author Hanamaru
      */
-    String selectAccountAndHint(SysUser sysUser);
+    Result selectAccountAndHint(SysUser sysUser);
 
     /**
      * 修改用户密码

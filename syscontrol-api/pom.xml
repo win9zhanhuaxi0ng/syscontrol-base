@@ -35,5 +35,11 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.10.5</version>
         </dependency>
+        <!--本项目-->
+        <dependency>
+            <groupId>com.demofactory.syscontrol</groupId>
+            <artifactId>syscontrol-common</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 </project>
