@@ -27,7 +27,7 @@ public interface SysUserService extends IService<SysUser> {
      * @param sysUserDTO 用户DTO信息
      * @return
      */
-    String register(SysUserDTO sysUserDTO);
+    Result register(SysUserDTO sysUserDTO);
 
     /**
      * 判断账号与提示语是否正确
@@ -52,7 +52,7 @@ public interface SysUserService extends IService<SysUser> {
      * @param sysUser
      * @return
      */
-    String selectSysDomainAndSysOrg(SysUser sysUser);
+    Result selectSysDomainAndSysOrg(SysUser sysUser);
 
     /**
      * 添加用户组织和域
