@@ -1,6 +1,7 @@
 package com.demofactory.syscontrol.common;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 public class Result implements Serializable {
     private static final int SUCCESS = 200;
@@ -74,7 +75,17 @@ public class Result implements Serializable {
         this.data = data;
     }
 
+    public Result(int code,String message)
+    {
+        this.code = code;
+        this.message = message;
+    }
+
     public static Result ok(Object data) {
         return new Result(SUCCESS, "success", data);
     }
+    public static Result OK(String message) {
+        return new Result(SUCCESS, message);
+    }
+    public static Result failure(String message) {return new Result(FAILED,message);}
 }

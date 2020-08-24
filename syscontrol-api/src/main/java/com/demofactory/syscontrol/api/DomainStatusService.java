@@ -1,7 +1,10 @@
 package com.demofactory.syscontrol.api;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.demofactory.syscontrol.common.Result;
 import com.demofactory.syscontrol.domain.SysDomain;
+
+import java.util.List;
 
 /**
  * @author:Hanamaru
@@ -16,4 +19,18 @@ public interface DomainStatusService extends IService<SysDomain> {
      * @return
      */
     String domainUpdate(SysDomain sysDomain);
+
+    /**
+     * 通过id 查询域
+     * @param sysDomain
+     * @return
+     */
+    List<SysDomain> selectSysDomain(SysDomain sysDomain);
+
+    /**
+     * insert 域名
+     * @param sysDomain
+     * @return
+     */
+    Result insertSysDomain(SysDomain sysDomain);
 }

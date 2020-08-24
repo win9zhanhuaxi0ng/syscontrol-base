@@ -1,6 +1,7 @@
 package com.demofactory.syscontrol.api;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.demofactory.syscontrol.common.Result;
 import com.demofactory.syscontrol.domain.Books;
 
 import java.util.List;
@@ -17,7 +18,7 @@ public interface BookService extends IService<Books> {
      * @param books
      * @return
      */
-    String insertBook(Books books);
+    Result insertBook(Books books);
 
     /**
      * 书本查找 book_name domain_id
@@ -33,5 +34,5 @@ public interface BookService extends IService<Books> {
      * @param id
      * @return
      */
-    String deleteBook(Long id);
+    Result deleteBook(Long id);
 }

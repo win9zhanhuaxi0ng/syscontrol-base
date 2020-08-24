@@ -1,6 +1,7 @@
 package com.demofactory.syscontrol.api;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.demofactory.syscontrol.common.Result;
 import com.demofactory.syscontrol.domain.SysUser;
 
 import java.util.List;
@@ -25,7 +26,7 @@ public interface AssignUserService extends IService<SysUser> {
      * @param sysUser
      * @return
      */
-    String updateAssignUser(SysUser sysUser);
+    Result updateAssignUser(SysUser sysUser);
 
 
 }
