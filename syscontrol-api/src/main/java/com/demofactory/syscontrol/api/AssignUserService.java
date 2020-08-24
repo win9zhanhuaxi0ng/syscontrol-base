@@ -11,7 +11,8 @@ import java.util.List;
  * @description: TODO
  * @date: 2020/8/19 14:11
  */
-public interface AssignUserService extends IService<SysUser> {
+public interface AssignUserService extends IService<SysUser>
+{
     /**
      * 通过 domainId orgId 查询 sysUser
      *

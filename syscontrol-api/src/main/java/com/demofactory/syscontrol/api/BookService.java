@@ -11,7 +11,8 @@ import java.util.List;
  * @description: TODO
  * @date: 2020/8/20 13:46
  */
-public interface BookService extends IService<Books> {
+public interface BookService extends IService<Books>
+{
     /**
      * 书本插入 book_name domain_id
      *

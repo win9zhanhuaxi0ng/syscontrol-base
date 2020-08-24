@@ -8,7 +8,8 @@ import com.demofactory.syscontrol.domain.SysUser;
  * @description: TODO
  * @date: 2020/8/19 17:34
  */
-public interface UserStatusService extends IService<SysUser> {
+public interface UserStatusService extends IService<SysUser>
+{
     /**
      * 通过 account 修改Status
      *

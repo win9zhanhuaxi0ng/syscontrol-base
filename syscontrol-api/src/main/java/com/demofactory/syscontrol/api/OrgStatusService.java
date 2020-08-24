@@ -11,7 +11,8 @@ import java.util.List;
  * @description: TODO
  * @date: 2020/8/20 13:45
  */
-public interface OrgStatusService extends IService<SysOrg> {
+public interface OrgStatusService extends IService<SysOrg>
+{
     /**
      * 通过id status 更改 sysOrg user 的status
      *
@@ -22,6 +23,7 @@ public interface OrgStatusService extends IService<SysOrg> {
 
     /**
      * 通过domainid id 查询机构
+     *
      * @param sysOrg
      * @return
      */
@@ -29,6 +31,7 @@ public interface OrgStatusService extends IService<SysOrg> {
 
     /**
      * 通过domainId id 插入org
+     *
      * @param sysOrg
      * @return
      */
