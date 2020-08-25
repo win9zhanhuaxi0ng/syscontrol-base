@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.demofactory.syscontrol.domain.Books;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * @author:Hanamaru
  * @description: TODO
@@ -11,4 +13,5 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface BookDao extends BaseMapper<Books> {
+    List<Long> selectBookIdByDomainId(Long domainId);
 }
