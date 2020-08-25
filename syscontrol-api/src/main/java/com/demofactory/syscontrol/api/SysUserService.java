@@ -44,7 +44,7 @@ public interface SysUserService extends IService<SysUser> {
      * @param sysUserDTO 用户DTO信息
      * @return 提示语
      */
-    String updatePassword(SysUserDTO sysUserDTO);
+    Result updatePassword(SysUserDTO sysUserDTO);
 
     /**
      * 查找用户组织和域
