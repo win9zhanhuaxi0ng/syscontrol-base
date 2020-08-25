@@ -19,7 +19,7 @@ public interface OrgStatusService extends IService<SysOrg>
      * @param sysOrg
      * @return
      */
-    String orgStatusUpdate(SysOrg sysOrg);
+    Result orgStatusUpdate(SysOrg sysOrg);
 
     /**
      * 通过domainid id 查询机构

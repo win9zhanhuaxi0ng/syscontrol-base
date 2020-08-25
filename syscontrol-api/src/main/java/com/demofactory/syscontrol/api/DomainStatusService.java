@@ -19,7 +19,7 @@ public interface DomainStatusService extends IService<SysDomain>
      * @param sysDomain
      * @return
      */
-    String domainUpdate(SysDomain sysDomain);
+    Result domainUpdate(SysDomain sysDomain);
 
     /**
      * 通过id 查询域
