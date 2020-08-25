@@ -1,6 +1,7 @@
 package com.demofactory.syscontrol.api;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.demofactory.syscontrol.common.ObjResult;
 import com.demofactory.syscontrol.common.Result;
 import com.demofactory.syscontrol.domain.SysDomain;
 
@@ -19,7 +20,7 @@ public interface DomainStatusService extends IService<SysDomain>
      * @param sysDomain
      * @return
      */
-    Result domainUpdate(SysDomain sysDomain);
+    ObjResult<String> domainUpdate(SysDomain sysDomain);
 
     /**
      * 通过id 查询域
@@ -35,5 +36,5 @@ public interface DomainStatusService extends IService<SysDomain>
      * @param sysDomain
      * @return
      */
-    Result insertSysDomain(SysDomain sysDomain);
+    ObjResult<String> insertSysDomain(SysDomain sysDomain);
 }

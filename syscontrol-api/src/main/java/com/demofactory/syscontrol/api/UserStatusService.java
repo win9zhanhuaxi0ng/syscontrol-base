@@ -1,6 +1,7 @@
 package com.demofactory.syscontrol.api;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.demofactory.syscontrol.common.ObjResult;
 import com.demofactory.syscontrol.common.Result;
 import com.demofactory.syscontrol.domain.SysUser;
 
@@ -17,5 +18,5 @@ public interface UserStatusService extends IService<SysUser>
      * @param sysUser
      * @return
      */
-    Result userStatusUpdate(SysUser sysUser);
+    ObjResult<String> userStatusUpdate(SysUser sysUser);
 }

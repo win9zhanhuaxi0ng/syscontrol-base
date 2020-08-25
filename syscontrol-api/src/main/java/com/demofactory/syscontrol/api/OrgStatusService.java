@@ -1,6 +1,7 @@
 package com.demofactory.syscontrol.api;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.demofactory.syscontrol.common.ObjResult;
 import com.demofactory.syscontrol.common.Result;
 import com.demofactory.syscontrol.domain.SysOrg;
 
@@ -19,7 +20,7 @@ public interface OrgStatusService extends IService<SysOrg>
      * @param sysOrg
      * @return
      */
-    Result orgStatusUpdate(SysOrg sysOrg);
+    ObjResult<String> orgStatusUpdate(SysOrg sysOrg);
 
     /**
      * 通过domainid id 查询机构
@@ -35,5 +36,5 @@ public interface OrgStatusService extends IService<SysOrg>
      * @param sysOrg
      * @return
      */
-    Result insertSysOrg(SysOrg sysOrg);
+    ObjResult<String> insertSysOrg(SysOrg sysOrg);
 }
