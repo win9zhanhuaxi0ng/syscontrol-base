@@ -1,6 +1,8 @@
 package com.demofactory.syscontrol.domain;
 
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.apache.ibatis.annotations.Param;
@@ -14,8 +16,10 @@ import java.time.LocalDateTime;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class SysUser extends Base {
-    private Integer domainId;
-    private Integer orgId;
+    @JsonSerialize(using = ToStringSerializer.class)
+    private Long domainId;
+    @JsonSerialize(using = ToStringSerializer.class)
+    private Long orgId;
     private String account;
     private String password;
     private String pwdPlaintext;
