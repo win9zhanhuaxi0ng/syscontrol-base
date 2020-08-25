@@ -28,7 +28,7 @@ public interface BookService extends IService<Books>
      * @param books
      * @return
      */
-    List<Books> selectBook(Books books);
+    ObjResult<List<Books>> selectBook(Books books);
 
     /**
      * 书本删除 book_name domain_id

@@ -28,7 +28,7 @@ public interface DomainStatusService extends IService<SysDomain>
      * @param sysDomain
      * @return
      */
-    List<SysDomain> selectSysDomain(SysDomain sysDomain);
+    ObjResult<List<SysDomain>> selectSysDomain(SysDomain sysDomain);
 
     /**
      * insert 域名

@@ -28,7 +28,7 @@ public interface OrgStatusService extends IService<SysOrg>
      * @param sysOrg
      * @return
      */
-    List<SysOrg> selectSysOrg(SysOrg sysOrg);
+    ObjResult<List<SysOrg>> selectSysOrg(SysOrg sysOrg);
 
     /**
      * 通过domainId id 插入org

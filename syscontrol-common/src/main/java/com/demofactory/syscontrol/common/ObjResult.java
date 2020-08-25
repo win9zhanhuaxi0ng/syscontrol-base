@@ -15,7 +15,7 @@ public class ObjResult<T> implements Serializable
     private boolean success;
     private  String code;
     private String message;
-    private T obj;
+    private T data;
 
     public ObjResult()
     {}
@@ -24,6 +24,13 @@ public class ObjResult<T> implements Serializable
         this.success = success;
         this.message = message;
         this.code = code;
+    }
+
+    public ObjResult(boolean success, String message, String code,T data) {
+        this.success = success;
+        this.message = message;
+        this.code = code;
+        this.data = data;
     }
 
 
@@ -36,4 +43,6 @@ public class ObjResult<T> implements Serializable
     {
         return new ObjResult<T>(false,msg,StatusCode.FAIL);
     }
+
+    public static <T> ObjResult<T> success(T data,String msg){return  new ObjResult<T>(true,msg,StatusCode.SUCCESS,data);}
 }

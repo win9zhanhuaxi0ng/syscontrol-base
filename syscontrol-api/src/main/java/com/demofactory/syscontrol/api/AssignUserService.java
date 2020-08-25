@@ -20,7 +20,7 @@ public interface AssignUserService extends IService<SysUser>
      * @param sysUser
      * @return List
      */
-    List<SysUser> selectAssignUser(SysUser sysUser);
+    ObjResult<List<SysUser>> selectAssignUser(SysUser sysUser);
 
     /**
      * 通过 id account 修改sysUser->domainId&&orgId
