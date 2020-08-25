@@ -60,15 +60,15 @@ public interface SysUserService extends IService<SysUser> {
      * @param sysUser 用户信息+域id和组织id
      * @return
      */
-    String insertSysDomainAndSysOrg(SysUser sysUser);
+    Result insertSysDomainAndSysOrg(SysUser sysUser);
 
     /**
-     * 展示用户所属域下的书列表
+     * 当前域下，用户未添加的书
      *
      * @param sysUser
      * @return
      */
-    List<Books> selectBooksByUserDomainId(SysUser sysUser);
+    Result selectBooksByUserDomainId(SysUser sysUser);
 
     /**
      * 用户添加书
@@ -76,20 +76,20 @@ public interface SysUserService extends IService<SysUser> {
      * @param userBook 书+用户ID
      * @return
      */
-    String insertBooksToUser(UserBook userBook);
+    Result insertBooksToUser(UserBook userBook);
 
     /**
-     * 展示用户下的书列表
+     * 用户已添加的书
      *
      * @return
      */
-    List<Books> selectBooksByUserId(SysUser sysUser);
+    Result selectBooksByUserId(SysUser sysUser);
 
     /**
      * 用户删除书
      *
-     * @param userBook 书ID和用户ID
+     * @param
      * @return
      */
-    String deleteBooksByUser(UserBook userBook);
+    Result deleteBooksByUser(UserBook userBook);
 }

@@ -1,6 +1,8 @@
 package com.demofactory.syscontrol.domain;
 
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -10,8 +12,8 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class SysOrg extends Base {
-
-    private Integer domainId;
+    @JsonSerialize(using = ToStringSerializer.class)
+    private Long domainId;
     private String orgName;
     private String orgCode;
     private String orgRemark;
